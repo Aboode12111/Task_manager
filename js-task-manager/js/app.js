@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tasks = loadTasksFromStorage();
     showtask();
 });
-
+/////////////////////////////////////////////////////////////////////////////////////////
 document.getElementById("taskForm").addEventListener("submit", e => {
     e.preventDefault();
     const input = document.getElementById("taskInput");
@@ -15,6 +15,8 @@ document.getElementById("taskForm").addEventListener("submit", e => {
     }
 });
 
+/////////////////////////////////////////////////////////////////////////////////////////
+
 document.getElementById("clearAll").addEventListener("click", () => {
     if (confirm("Are you sure you want to clear all tasks?")) {
         clearAllTasks();
@@ -22,6 +24,8 @@ document.getElementById("clearAll").addEventListener("click", () => {
         showtask();
     }
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////
 
 function showtask() {
     const list = document.getElementById("taskList");
@@ -46,15 +50,20 @@ function showtask() {
     document.getElementById("remainingCount").textContent = stats.remaining;
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////
+
 function changeState(id) {
     completed(id);
     saveTasksToStorage(tasks);
     showtask();
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////
+
 function removeTask(id) {
     deleteTask(id);
     saveTasksToStorage(tasks);
     showtask();
 }
+
 
