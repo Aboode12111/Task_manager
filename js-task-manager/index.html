@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="C:\Users\as123\OneDrive\Desktop\js-task-manager\css\style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Enter a new task" required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="stats">
+            <p>total: <span id="totalCount">0</span></p>
+            <p>completed: <span id="completedCount">0</span></p>
+            <p>remaining: <span id="remainingCount">0</span></p>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="controls">
+            <button id="clearAll">Clear All Tasks</button>
+        </div>
+
+        <blockquote id="quoteDisplay"></blockquote>
+    </div>
+
+    <script src="js/taskManager.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+
+</html>
