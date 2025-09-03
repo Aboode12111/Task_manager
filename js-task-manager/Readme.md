@@ -12,8 +12,7 @@ This app allows you to add, delete, complete tasks.
 -  Mark tasks as completed or undo them  
 -  Delete tasks individually  
 -  Clear all tasks with one button  
--  View task statistics:
+-  View:
   - Total tasks
   - Completed tasks
   - Remaining tasks  
--  Persistent storage with `localStorage`  
