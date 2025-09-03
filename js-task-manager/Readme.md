@@ -3,7 +3,7 @@
 A simple Task Manager built with HTML, CSS, and JavaScript.  
 This app allows you to add, delete, complete tasks.
 
-------------------------
+-------------------------
 
 
 #  Features
