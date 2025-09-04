@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* Main container */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+/* Task form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+form input:focus {
+  border-color: #1976d2;
+}
+
+form button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #1565c0;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.stats p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Task list */
+#taskList {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f6f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+#taskList li:hover {
+  transform: scale(1.02);
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Controls */
+.controls {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.controls button {
+  background: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #b71c1c;
+}
+
+/* Quote box */
+#quoteDisplay {
+  margin: 20px auto;
+  padding: 15px 20px;
+  background: #e3f2fd;
+  border-left: 5px solid #1976d2;
+  border-radius: 8px;
+  font-style: italic;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 450px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+#quoteDisplay strong {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: #1976d2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
