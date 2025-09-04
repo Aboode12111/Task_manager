@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     tasks = loadTasksFromStorage();
     showtask();
+    showRandomQuotes();
 });
 /////////////////////////////////////////////////////////////////////////////////////////
 document.getElementById("taskForm").addEventListener("submit", e => {
@@ -65,5 +66,6 @@ function removeTask(id) {
     saveTasksToStorage(tasks);
     showtask();
 }
+
 
 
